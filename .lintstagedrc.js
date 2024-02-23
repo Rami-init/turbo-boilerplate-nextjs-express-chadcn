@@ -1,9 +1,7 @@
 module.exports = {
-  "lint-staged": {
-    "(apps|packages)/**/*.{js,ts,jsx,tsx}": [
-      "prettier --write",
-      "eslint --fix",
-    ],
-    "*.json": ["prettier --write"],
-  },
+  "(apps|packages)/**/*.{js,ts,jsx,tsx}": [
+    "prettier --write --ignore-unknown",
+    "eslint --fix",
+  ],
+  "*.json": ["prettier --write"],
 };
