@@ -1,12 +1,15 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "sideEffects": false,
+  "description": "Create a Node.js app for building production-ready RESTful APIs using Express, by running one command",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "repository": "https://github.com/Rami-init/turbo-boilerplate-nextjs-express-chadcn.git",
   "scripts": {
     "start": "node ./dist/index.js",
     "dev": "tsup --watch --onSuccess \"node dist/index.js\"",
-    "build": "tsup",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
@@ -14,19 +17,33 @@
     "test": "echo \"Server tests\""
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Rami Sami <ramisamidev@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/express": "^4.17.21",
     "@types/node": "^20.10.6",
-    "eslint": "^8.56.0",
-    "nodemon": "^3.0.3",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "@apollo/server": "^4.10.0",
+    "@trpc/server": "^10.45.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "graphql": "^16.8.1",
+    "helmet": "^7.1.0",
+    "http-status": "^1.7.4",
+    "ioredis": "^5.3.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.10",
+    "pg": "^8.11.3",
+    "winston": "^3.11.0",
+    "zod": "^3.22.4"
   }
 }
