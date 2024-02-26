@@ -1,0 +1,9 @@
+{
+  "extends": "@repo/typescript-config/react-app.json",
+  "compilerOptions": {
+    "lib": ["dom", "ES2015"],
+    "types": ["node"]
+  },
+  "include": ["."],
+  "exclude": ["storybook-static", "node_modules"]
+}

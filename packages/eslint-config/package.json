@@ -6,8 +6,12 @@
     "base.js",
     "react.js",
     "next.js",
-    "server.js"
+    "server.js",
+    "storybook.js"
   ],
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  },
   "devDependencies": {
     "@vercel/style-guide": "^5.1.0",
     "eslint-config-turbo": "^1.11.3",

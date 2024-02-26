@@ -1,3 +1,4 @@
+/* eslint-disable no-console -- need console log there */
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 
@@ -57,4 +58,6 @@ async function main(): Promise<void> {
   console.log(`🚀  Server ready at: ${url}`);
 }
 
-main().catch((err) => { console.log(err); });
+main().catch((err) => {
+  console.log(err);
+});

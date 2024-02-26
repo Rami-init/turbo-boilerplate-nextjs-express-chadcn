@@ -1,7 +1,6 @@
 {
   "name": "@repo/tailwind-config",
   "version": "0.1.1",
-  "main": "./src/index.ts",
   "sideEffects": false,
   "private": true,
   "types": "./dist/index.d.ts",
@@ -11,7 +10,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "watch": "tsup src/index.ts --format esm,cjs --watch --dts",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist && rm -rf .turbo && rm -rf node_modules",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix"

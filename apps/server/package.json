@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "sideEffects": false,
   "description": "Create a Node.js app for building production-ready RESTful APIs using Express, by running one command",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
   "repository": "https://github.com/Rami-init/turbo-boilerplate-nextjs-express-chadcn.git",
   "scripts": {
     "start": "node ./dist/index.js",
