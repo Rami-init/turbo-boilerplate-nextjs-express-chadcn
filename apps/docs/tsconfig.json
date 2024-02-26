@@ -4,6 +4,6 @@
     "lib": ["dom", "ES2015"],
     "types": ["node"]
   },
-  "include": ["."],
+  "include": [".storybook", "stories"],
   "exclude": ["storybook-static", "node_modules"]
 }
